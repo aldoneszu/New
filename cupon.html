@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوبون فودافون</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e3b47;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1c262f;
+            border: 2px solid #ff4500;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #000;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffa500;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 16px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 2px solid #ffa500;
+            border-radius: 5px;
+            background-color: #2e3b47;
+            color: #fff;
+        }
+        button {
+            background-color: #ffa500;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #ff8c00;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>كوبون فودافون</h1>
+        <form action="activate_coupon.php" method="POST">
+            <label for="number">أدخل رقم الهاتف</label>
+            <input type="text" id="number" name="number" placeholder="أدخل رقم الهاتف" required>
+
+            <label for="password">أدخل كلمة المرور</label>
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+
+            <button type="submit">تفعيل</button>
+        </form>
+    </div>
+</body>
+</html>
